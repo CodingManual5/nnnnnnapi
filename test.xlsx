@@ -1,0 +1,48 @@
+Difference between Rest and Soap	REST APIs are lightweight, making them ideal for newer contexts like the Internet of Things (IoT), mobile application development, and serverless computing. SOAP web services offer built-in security and transaction compliance that align with many enterprise needs, but that also makes them heavier. Additionally, many public APIs, like the Google Maps API, follow the REST guidelines.
+Representational Statr transfer-REST	REST is a set of architectural principles attuned to the needs of lightweight web services and mobile applications
+Simple object access protocol-SOAP	
+	
+Diff between Put and Post	"PUT method is called when you have to modify a single resource while POST method is called when you have to add a child resource.
+You can use UPDATE query in PUT whereas you can use create query in POST.
+If you send the same PUT request multiple times, the result will remain the same but if you send the same POST request multiple times, you will receive different results."
+	
+Types of HTTP Requests methods	"GET
+As the name suggests, the Get method fetches the information from the server. Moreover, it is the most commonly used method "
+	"HEAD
+The Head method is similar to the Get method, but it retrieves only the header data and not the entire response body. Moreover, we use it when you need to check the document's file size without downloading the document."
+	"POST
+The Post method works to send data to the server. You may add or update data using the Post request. We send the information that needs to update in the request body."
+	"PUT
+The Put method is similar to the Post method since it updates the data. The only difference is that we use it when we have to replace an existing entity completely. Also, PUT methods are idempotent, i.e., they return the same result on executing repeatedly."
+	"PATCH
+This method is again similar to Post and Put methods, but we use it when we have to update some data partially. Moreover, unlike the Post and Put methods, you may send only the entity that needs updation in the request body with the Patch method."
+	"DELETE
+Like its name, the Delete method deletes the server's representations of resources through the specific URL. Additionally, just like the Get method, they do not have a request body."
+	
+Request Header	Using the request header, the client can send additional information to the server about the request as well as the client itself. Additionally, there can be either zero or more headers in the request, which can define the content type, authorization specification, Cookie information, etc. 
+	
+	
+HTTP response Codes	100-199:Informational Responses
+	200-299: Successful responses
+	300-399: Redirection Messages
+	400-499: Client Error Responses
+	500-599: Server Error Responses
+	"200-OK:
+GET: The resource has been fetched and transmitted in the message body.
+HEAD: The representation headers are included in the response without any message body.
+PUT or POST: The resource describing the result of the action is transmitted in the message body.
+TRACE: The message body contains the request message as received by the server."
+	201-Created :The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests.
+	400-Bad Request
+	"401-Unauthorised or Unauthenticated:
+client must authenticate itself to get the requested response."
+	"403: Forbidden:
+client must authenticate itself to get the requested response."
+	"404: Not Found:
+The server can not find the requested resource."
+	"500-Internal Server Error:
+situation server does not know how to handle."
+	"502:Bad Gateway:
+This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response."
+	"503:Service unavailable
+The server is not ready to handle the request."
